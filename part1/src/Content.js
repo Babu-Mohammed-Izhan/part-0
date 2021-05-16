@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Part from './Part';
+
 
 const Content = ({ props }) => {
     return (
