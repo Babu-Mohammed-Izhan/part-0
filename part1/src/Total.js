@@ -1,9 +1,15 @@
 import React from 'react'
 
 const Total = (props) => {
+    const parts = props.course.parts;
+    console.log(parts);
     return (
         <div>
-            <p>Number of exercises {props.exercises1 + props.exercises2 + props.exercises3}</p>
+            <p>Total number of exercises:
+            {parts.reduce((a, b) => {
+                return a + b['exercises'];
+            }, 0)}
+            </p>
         </div>
     )
 }
